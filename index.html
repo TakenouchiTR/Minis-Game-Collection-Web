@@ -113,6 +113,7 @@ body {
 <link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
 
 	<script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('serviceworker.js'); }</script>
+<script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('serviceworker.js'); }</script>
 </head>
 	<body>
 		<canvas id="canvas">
@@ -218,7 +219,7 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		const missingMsg = 'Error\n\nThese components should become available upon a refresh.\n\nThe following features required to run Godot projects on the Web are missing:\n';
+		const missingMsg = 'Error\n\nThese components should become available upon a refresh.\n\n\nThese components should become available upon a refresh.\n\nThe following features required to run Godot projects on the Web are missing:\n';
 		displayFailureNotice(missingMsg + missing.join('\n'));
 	} else {
 		setStatusMode('indeterminate');
